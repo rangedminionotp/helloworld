@@ -1,12 +1,14 @@
 import React from 'react';
-import FaceIcon from './faceIcon';
-import Socials from './socials';
-import './home.css';
+import Content from './content';
+import Navibar from './navibar';
+import './css/home.css';
+import './css/icons.css';
+import './css/hello.css';
 function Home() {
     return (
         <div>
-            <FaceIcon />
-            <Socials />
+            <Navibar />
+            <Content />
         </div>
     );
 };
