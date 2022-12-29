@@ -21,7 +21,7 @@ function Socials() {
         window.open(e.currentTarget.id);
     };
     return (
-        <div id='socialIcons'>
+        <div class='socialIcons'>
             {socialIcons.map((text, index)=> (
                 <IconButton
                 id={socialLinks[index]}

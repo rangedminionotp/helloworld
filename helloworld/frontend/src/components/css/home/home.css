@@ -1,6 +1,7 @@
 div#root {
     height: 100vh;
   }
+  
 body {
     /* background: rgb(239, 234, 234);*/
     background: rgb(134, 178, 220);
@@ -9,8 +10,7 @@ body {
         rgb(134, 178, 220) 0%,
         rgb(214, 129, 174) 100%
     );
-    display: flex;
-    overflow: hidden;
+    display: flex; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
