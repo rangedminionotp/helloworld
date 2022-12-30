@@ -4,12 +4,13 @@
     color: white;
     font-family: Helvetica;
     font-weight: 300; 
-    left: 75%; /* just change this */
+    font-size: 1vw;
+    right: 1vw; /* maybe change this */
     position: absolute;
 }
 
 .navbarItem {
-    padding: 16px 16px;
+    padding: 1vw 1vw;
     cursor: pointer;
     vertical-align: middle;
 }

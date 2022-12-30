@@ -21,14 +21,16 @@ function Socials() {
         window.open(e.currentTarget.id);
     };
     return (
-        <div class='socialIcons'>
+        <div>
             {socialIcons.map((text, index)=> (
+                <div class='socialIcons'>
                 <IconButton
                 id={socialLinks[index]}
                 aria-label={text}
                 onClick={(e)=>handleClick(e)}>
                     {text}
                 </IconButton>
+                </div>
             ))}
         </div>
     );

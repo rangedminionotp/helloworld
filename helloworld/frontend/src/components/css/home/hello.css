@@ -9,7 +9,7 @@
 }
 
 .hello {
-    font-size: 80px;
+    font-size: 5vw;
     font-family: Coiny;
     background: linear-gradient(
         110deg,
@@ -24,7 +24,7 @@
 .myname {
     line-height: 1.95; 
     transform: rotate(-7deg); 
-    font-size: 7.4em;
+    font-size: 8vw;
     margin: -1.2em;
     color: rgb(241, 231, 231);
     font-family: 'Mr Dafoe';
