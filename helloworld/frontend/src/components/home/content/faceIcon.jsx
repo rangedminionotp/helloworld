@@ -5,7 +5,7 @@ function FaceIcon() {
     return (
         <div>
             <Avatar id='avatar'
-            src='https://media.discordapp.net/attachments/368534832197664769/1057742297997000715/d3b55e2b466e91c4.jpg?width=525&height=676'/>
+            src='https://media.discordapp.net/attachments/368534832197664769/1058296225109127199/149e2137e799dd86.jpg?width=533&height=675'/>
         </div>
     );
 };
