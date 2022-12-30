@@ -4,8 +4,8 @@ import Home from './components/home/Home';
 import AboutMe from './components/aboutme/aboutme';
 import SharedContext from './components/util/shared';
 
-const AuthenticatedRoute = ({children}) => {
-  return <Navigate to='/' replace />;
+const AuthenticatedRoute = () => {
+  return <Navigate to='/helloworld' replace />;
 };
 
 function App() {
@@ -14,10 +14,10 @@ function App() {
     <SharedContext.Provider value={{page, setPage}}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={
+          <Route path='/helloworld' element={
               <Home />
           }/>
-          <Route path='/aboutme' element={
+          <Route path='/helloworld/aboutme' element={
               <AboutMe />
           }/>
           <Route path='*' element={

@@ -7,7 +7,7 @@ function AboutMeBtn() {
     const redirect = useNavigate();
     const makeChange = () => {
         setPage('About Me');
-        redirect('/aboutme');
+        redirect('/helloworld/aboutme');
     }
     return (
         <div id='aboutmeBtn'
