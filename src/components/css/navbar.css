@@ -1,0 +1,20 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 300; 
+    font-size: 1vw;
+    right: 1vw; /* maybe change this */
+    position: absolute;
+}
+
+.navbarItem {
+    padding: 1vw 1vw;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.navbarItem:hover{
+    color: purple;
+}
