@@ -7,7 +7,7 @@ function HomeBtn() {
     const redirect = useNavigate();
     const makeChange = () => {
         setPage('Home');
-        redirect('/');
+        redirect('/helloworld');
     }
     return (
         <div id='homeBtn'
