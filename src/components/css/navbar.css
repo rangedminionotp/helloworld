@@ -5,8 +5,8 @@
     font-family: Helvetica;
     font-weight: 300; 
     font-size: 1vw;
-    right: 1vw; /* maybe change this */
-    position: absolute;
+    margin-left: 73vw;     
+    position: relative;
 }
 
 .navbarItem {

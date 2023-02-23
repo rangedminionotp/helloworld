@@ -4,7 +4,7 @@ import Divider from '@mui/material/Divider';
 function Experience() {
     return (
         <div id='experience'>
-            <img class='pic' alt='text' width="100%" src='https://sustainabilityreport.ucop.edu/2020/wp-content/uploads/sites/2/2020/10/UCSC_Campus-from-above-1000x670.jpg'></img>
+            <img class='pic' alt='text' width="100%" src='https://bpb-us-w2.wpmucdn.com/wordpress.ucsc.edu/dist/6/29/files/2004/09/e2-building.jpg'></img>
             <div class="longlines">
                 <Divider />
             </div>
