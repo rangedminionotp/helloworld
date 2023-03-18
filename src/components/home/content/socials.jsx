@@ -1,6 +1,5 @@
 import React from 'react';
 import IconButton from '@mui/material/IconButton';
-
 // wanted to use mui icons, but its sorta incomplete, I take L
 function Socials() {
     const socialIcons = [
@@ -30,7 +29,7 @@ function Socials() {
                 id={socialLinks[index]}
                 aria-label={text}
                 onClick={(e)=>handleClick(e)}>
-                    {text}
+                    {text} 
                 </IconButton>
                 </div>
             ))}

@@ -10,30 +10,30 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const AuthenticatedRoute = () => {
-  return <Navigate to='/helloworld' replace />;
+  return <Navigate to='/helloworld/home' replace />;
 };
 
 function App() {
   const [page, setPage] = React.useState('Home');
   const [theme, setTheme] = React.useState(createTheme({
     palette: {
-      mode: 'dark',
+      mode: 'light',
     },
   })); 
-  const [themeState, setThemeState] = React.useState('dark');
+  const [themeState, setThemeState] = React.useState('light');
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
     <SharedContext.Provider value={{page, setPage, theme, setTheme, themeState, setThemeState}}>
       <BrowserRouter>
         <Routes>
-          <Route path='/helloworld' element={
+          <Route path='/helloworld/home' exact element={
               <Home />
           }/>
-          <Route path='/helloworld/aboutme' element={
+          <Route path='/helloworld/aboutme' exact element={
               <AboutMe />
           }/>
-          <Route path='/helloworld/projects' element={
+          <Route path='/helloworld/projects' exact element={
               <Projects />
           }/>
           <Route path='*' element={
