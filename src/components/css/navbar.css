@@ -1,7 +1,7 @@
 #navbar {
     display: flex;
     align-items: center;
-    color: white;
+    /*color: white; */
     font-family: Helvetica;
     font-weight: 300; 
     font-size: 1vw;
@@ -13,8 +13,9 @@
     padding: 1vw 1vw;
     cursor: pointer;
     vertical-align: middle;
-}
+} 
 
 .navbarItem:hover{
     color: purple;
+    font-weight: 300; 
 }
