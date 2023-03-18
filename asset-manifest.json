@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/helloworld/static/css/main.fc1a5c84.css",
-    "main.js": "/helloworld/static/js/main.e4af823e.js",
+    "main.js": "/helloworld/static/js/main.ef4a0591.js",
     "index.html": "/helloworld/index.html",
     "main.fc1a5c84.css.map": "/helloworld/static/css/main.fc1a5c84.css.map",
-    "main.e4af823e.js.map": "/helloworld/static/js/main.e4af823e.js.map"
+    "main.ef4a0591.js.map": "/helloworld/static/js/main.ef4a0591.js.map"
   },
   "entrypoints": [
     "static/css/main.fc1a5c84.css",
-    "static/js/main.e4af823e.js"
+    "static/js/main.ef4a0591.js"
   ]
 }
