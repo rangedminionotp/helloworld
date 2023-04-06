@@ -1,7 +1,7 @@
 #aboutmeContent {
     position: absolute; 
     background: rgba(244, 248, 249, 0.5);
-    margin-top: 10vw;
+    margin-top: 10;
 } 
 
 #aboutmeContent{
@@ -15,3 +15,4 @@
     opacity: 1;
 }
 
+    

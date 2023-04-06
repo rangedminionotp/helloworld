@@ -5,8 +5,7 @@ import '../css/projects/projects.css';
 function Projects() {
     return (
         <div id='projects'>
-            <Navbar />
-            <Content />
+            <Navbar /> 
         </div>
     );
 };

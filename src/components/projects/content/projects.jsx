@@ -30,7 +30,8 @@ function Projects() {
                     <div>
                     <Fab variant="extended" 
                          id={doneLinks[index]}
-                         onClick={(e)=>handlepubClick(e)}>
+                         onClick={(e)=>handlepubClick(e)}
+                         style={{margin: 3}}>
                         <div class='project'>{text}</div>
                     </Fab> 
                     </div>
@@ -39,8 +40,9 @@ function Projects() {
                     <div>
                     <Fab variant="extended" 
                          id={doneLinks[index]}
-                         onClick={handleprivClick}>
-                        <div class='project'>{text}</div>
+                         onClick={handleprivClick}
+                         style={{margin: 3}}>
+                        <div className='project'>{text}</div>
                     </Fab> 
                     </div>
                  ))}

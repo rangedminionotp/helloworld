@@ -6,8 +6,7 @@ import '../css/aboutme/content.css';
 function AboutMe() {
     return (
         <div id='aboutme'> 
-            <Navbar />
-            <Content />
+            <Navbar /> 
         </div>
     );
 };

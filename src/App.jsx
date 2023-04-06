@@ -10,7 +10,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const AuthenticatedRoute = () => {
-  return <Navigate to='/helloworld/home' replace />;
+  return <Navigate to='/helloworld' replace />;
 };
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
     <SharedContext.Provider value={{page, setPage, theme, setTheme, themeState, setThemeState}}>
       <BrowserRouter>
         <Routes>
-          <Route path='/helloworld/home' exact element={
+          <Route path='/helloworld' exact element={
               <Home />
           }/>
           <Route path='/helloworld/aboutme' exact element={

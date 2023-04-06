@@ -1,35 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Coiny');
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 
+#container{
+    overflow: hidden;
+    height: 50vh;
+}
 .greeting { 
-    letter-spacing: 0em;
-    display:block;
-    text-align: center;
-    position: relative; 
+    letter-spacing: 0px;   
+    text-align: center; 
+    align-items: center;  
 }
 
 .hello {
-    font-size: 5vw;
-    font-family: Coiny;
+    font-size: 100px;
+    font-family: Coiny; 
     background: linear-gradient(
         110deg,
-        rgb(3, 27, 49) 0%,
+        rgb(40, 96, 148) 0%,
         rgb(150, 5, 82) 100%
-    );
-    margin: 0;
+    ); 
+    margin-top: -300px;
+    width: 570px; 
+    left: 50%;
+    position:  absolute;
+    transform: translate(-50%, 200%);  
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
-.myname {
-    line-height: 1.95; 
-    transform: rotate(-7deg); 
-    font-size: 8vw;
-    margin: -1.2em;
-    color: rgb(241, 231, 231);
+.myname {   
+    font-size: 150px;
+    transform: rotate(-9deg); 
+    color: rgb(241, 231, 231); 
     font-family: 'Mr Dafoe';
+    overflow: hidden;
     text-shadow: 0 0 0.05em #fff, 0 0 0.2em #190f18, 0 0 0.3em #fe05e1;
 }
- 
-
-

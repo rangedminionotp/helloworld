@@ -8,14 +8,14 @@ function HomeBtn() {
     const redirect = useNavigate();
     const makeChange = () => {
         setPage('Home');
-        redirect('/helloworld/home'); 
+        redirect('/helloworld'); 
     }
     return (
-        <div id='homeBtn'
+        <button id='homeBtn'
         class='navbarItem'
         onClick={makeChange}>
             Home
-        </div>
+        </button>
     );
 };
 

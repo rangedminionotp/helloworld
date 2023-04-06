@@ -10,11 +10,11 @@ function ProjectsBtn() {
         redirect('/helloworld/projects'); 
     }
     return (
-        <div id='projectsBtn'
+        <button id='projectsBtn'
         class='navbarItem'
         onClick={makeChange}>
             Projects
-        </div>
+        </button>
     );
 };
 

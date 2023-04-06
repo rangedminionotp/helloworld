@@ -10,12 +10,12 @@ function AboutMeBtn() {
         redirect('/helloworld/aboutme');
     }
     return (
-        <div id='aboutmeBtn'
+        <button id='aboutmeBtn'
         class='navbarItem'
         onClick={makeChange} 
         >
             About Me
-        </div>
+        </button>
     );
 };
 

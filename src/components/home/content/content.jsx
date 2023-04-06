@@ -6,7 +6,7 @@ import Hello from './hello';
 function Content() {
     return (
         <div>
-            <FaceIcon />
+            <FaceIcon /> 
             <Hello />
             <Socials />
         </div>

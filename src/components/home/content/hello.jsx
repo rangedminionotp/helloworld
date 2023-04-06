@@ -2,13 +2,15 @@ import React from 'react';
 
 function Hello() {
     return (
-        <div>
-            <span class='greeting hello'>
+        <div id='container'>
+        <div class='greeting'>
+            <div class='greeting hello'>
                 HELLO, I'M
-            </span>
-            <span class='greeting myname'>
+            </div>
+            <div class='greeting myname'>
                 Jade
-            </span>
+            </div>
+        </div>
         </div>
     );
 };

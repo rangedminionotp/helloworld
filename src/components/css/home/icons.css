@@ -1,20 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
 #avatar{
     position: relative;
-    width: 15vw;
-    height: 15vw;
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
     margin-left: auto;
     margin-right: auto;
+} 
+
+body, .flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;   
+    margin-top: -110px;
+} 
+ 
+.social-btn { 
+	cursor: pointer;
+    position: relative; 
+	height: 50px;
+	width: 50px;
+	font-family: 'Titillium Web', sans-serif;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	background: white; 
+	transition: 1s;
+    margin-left: 200px;  
+    justify-content: center;
+	align-items: center;
 }
 
-.socialIcons{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    bottom: -10vw;
+.social-btn span {
+    transition: all 0.2s ease-in-out;
+	width: 0px;
+    opacity: 0;
+	overflow: hidden;
+	transition: 1s;
+	text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
-.icon {
-    width: 2.5vw;
-    height: 2.5vw;
+.social-btn:hover {
+	width: 200px;
+	border-radius: 5px;
+}
+
+.social-btn:hover span {
+	padding: 2px;
+	width: max-content;
+    opacity: 1; 
+} 
+
+#linkedin svg {
+	fill: #0e76a8;
+}
+
+#github {
+	fill: #333;
 }

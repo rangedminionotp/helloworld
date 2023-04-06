@@ -22,9 +22,8 @@ function LightDarkBtn() {
         themeState === 'dark' ? setbtn(<LightModeIcon />) : setbtn(<DarkModeIcon />)
     } 
     return (
-        <div id='themebtn'
-        class='navbarItem'>
-            <IconButton onClick={makeChange}>
+        <div id='themebtn' >
+            <IconButton size='large' onClick={makeChange}>
             {btn}
             </IconButton> 
         </div>
