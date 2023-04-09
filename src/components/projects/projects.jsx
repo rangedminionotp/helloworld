@@ -6,6 +6,7 @@ function Projects() {
     return (
         <div id='projects'>
             <Navbar /> 
+            <Content />
         </div>
     );
 };

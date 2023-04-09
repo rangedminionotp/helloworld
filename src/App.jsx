@@ -6,6 +6,7 @@ import Projects from './components/projects/projects';
 
 import SharedContext from './components/util/context/shared';
 import CssBaseline from '@mui/material/CssBaseline';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -21,10 +22,11 @@ function App() {
     },
   })); 
   const [themeState, setThemeState] = React.useState('light');
+  const [btn, setbtn] = React.useState(<DarkModeIcon />); 
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-    <SharedContext.Provider value={{page, setPage, theme, setTheme, themeState, setThemeState}}>
+    <SharedContext.Provider value={{page, setPage, theme, setTheme, themeState, setThemeState, btn, setbtn}}>
       <BrowserRouter>
         <Routes>
           <Route path='/helloworld' exact element={

@@ -1,18 +1,77 @@
-#aboutmeContent {
-    position: absolute; 
-    background: rgba(244, 248, 249, 0.5);
-    margin-top: 10;
-} 
-
-#aboutmeContent{
-    position: relative;
-    font-family:'Courier New', Courier, monospace;
-    color:rgb(0, 0, 0);  
-    filter: drop-shadow(0 0 0.55rem black);
-    font-weight: 700;
-    font-size: 1.1vw;
-    text-align: center; 
-    opacity: 1;
+#aboutme{   
+    overflow: hidden;
 }
 
-    
+.aboutme{
+    font-size: 100px;
+}
+
+.aboutmeContent{
+    position: relative;
+    font-family: Coiny;
+    color:#0a2a2d;  
+    filter: drop-shadow(0 0 0.55rem black);
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center; 
+    align-items: center;  
+    opacity: 1;
+    width: 400px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background: rgba(244, 248, 249, 0.5);
+    cursor: pointer; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+.aboutmeContent:hover{
+    font-size: 30px;
+    height: 45px;
+}
+
+#education{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    align-items: center;   
+    width: 400px; 
+    color:  #0a2a2d; 
+    font-family: system-ui; 
+}
+
+#educationbg{ 
+    /*background: rgba(244, 248, 249, 0.5);*/
+    filter: drop-shadow(0 0 0.55rem black);
+    background: rgb(209, 207, 207);
+    font-size: 24px;
+    text-shadow: 0.2px 0.2px black;
+}
+
+#skillbg{
+    /*background: rgba(244, 248, 249, 0.5);*/
+    filter: drop-shadow(0 0 0.55rem black);
+    background: rgb(209, 207, 207);
+    font-size: 20px;
+    text-shadow: 0.2px 0.2px black;
+}
+#slug{
+    width: 150px;
+    animation-name: slugmove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+} 
+.pop{
+    left:40px;
+}
+@keyframes slugmove {
+    0%   {filter: drop-shadow(0 0 0.33rem #0a2a2d);}
+    25%  {filter: drop-shadow(0 0 0.33rem #ecec97);}
+    50%  {filter: drop-shadow(0 0 0.33rem #0a2a2d);}
+    75%  {filter: drop-shadow(0 0 0.33rem #ecec97);}
+    100% {filter: drop-shadow(0 0 0.33rem #0a2a2d);}
+}
+  

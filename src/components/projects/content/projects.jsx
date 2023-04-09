@@ -4,9 +4,9 @@ import {Fab} from '@mui/material';
 import { Button, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions } from '@mui/material';
 
 function Projects() {
-    const doneProjects = ['Calendar in JS', 'Calendar in React', 'Personal Portfoli Site'];
-    const doneLinks = ['https://github.com/rangedminionotp/calendar', 'https://github.com/rangedminionotp/reactCalendar', 'https://github.com/rangedminionotp/helloworld'];
-    const privateProj = ['Slug Gmail', 'Slug Market'];
+    const doneProjects = ['Calendar in React', 'Personal Portfoli Site'];
+    const doneLinks = ['https://github.com/rangedminionotp/reactCalendar', 'https://github.com/rangedminionotp/helloworld'];
+    const privateProj = ['Calendar in JS', 'Slug Slack', 'Slug Gmail', 'Slug Market'];
     const privDesc = 'Cannot publish code due to IP reasons, but can show an employer if needed.';
     const [open, setOpen] = React.useState(false);  
     const handlepubClick = (e) => {
@@ -22,29 +22,25 @@ function Projects() {
         <div id='content'>
             <div id='aboutmeFI'>
                 <FaceIcon />
-                <div class='greeting myname'>Projects</div> 
+                <div class='greeting myname projectsss'>Projects</div> 
             </div>
             <div>
                 <div class='done'>
                 {doneProjects.map((text, index)=> ( 
                     <div>
-                    <Fab variant="extended" 
-                         id={doneLinks[index]}
+                    <div id={doneLinks[index]}
                          onClick={(e)=>handlepubClick(e)}
-                         style={{margin: 3}}>
-                        <div class='project'>{text}</div>
-                    </Fab> 
+                         style={{margin: 3}} class='project' type='button'>
+                        {text} 
+                    </div> 
                     </div>
                  ))}
                  {privateProj.map((text, index)=> ( 
-                    <div>
-                    <Fab variant="extended" 
-                         id={doneLinks[index]}
-                         onClick={handleprivClick}
-                         style={{margin: 3}}>
-                        <div className='project'>{text}</div>
-                    </Fab> 
-                    </div>
+                    <div id={doneLinks[index]}
+                    onClick={handleprivClick}
+                    style={{margin: 3}} class='project' type='button'>
+                   {text} 
+               </div>  
                  ))}
                  <Dialog open={open} onClose={handleClose}>
                     <DialogTitle>IP Restrictions</DialogTitle>

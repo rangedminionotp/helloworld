@@ -1,5 +1,46 @@
-.project {
-    margin: 2vw; 
-    font-family: Coiny;
-    display:flex;
+#projects{
+    overflow: hidden;
 }
+.projectsss{
+    font-size: 100px;
+}
+
+.project {  
+    font-family:'Courier New', Courier, monospace;
+    position: relative; 
+    color:#0a2a2d;  
+    filter: drop-shadow(0 0 0.55rem black);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center; 
+    align-items: center;  
+    opacity: 1;
+    width: 400px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background: rgba(244, 248, 249, 0.5);
+    cursor: pointer; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.project:hover{
+    font-size: 30px;
+    height: 45px;
+}
+
+
+.done{
+    position: relative;
+    color:#0a2a2d;     
+    width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; 
+    cursor: pointer; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+ 

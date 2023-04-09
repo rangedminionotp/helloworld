@@ -7,6 +7,7 @@ function AboutMe() {
     return (
         <div id='aboutme'> 
             <Navbar /> 
+            <Content />
         </div>
     );
 };
