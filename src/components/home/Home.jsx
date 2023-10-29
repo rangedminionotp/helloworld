@@ -4,7 +4,7 @@ import Navbar from '../navbar/navbar';
 import '../css/navbar.css'; 
 import '../css/home/icons.css';
 import '../css/home/hello.css'; 
-
+import '../css/home/caption.css';
 function Home() {
     return (
         <div id='home'>

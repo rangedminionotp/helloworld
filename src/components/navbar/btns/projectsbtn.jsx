@@ -3,15 +3,24 @@ import SharedContext from '../../util/context/shared';
 import {useNavigate} from 'react-router-dom';
 
 function ProjectsBtn() {
-    const {setPage} = React.useContext(SharedContext);
+    const {page, setPage} = React.useContext(SharedContext);
     const redirect = useNavigate();
     const makeChange = () => {
-        setPage('Projects');
+        localStorage.setItem('page', 'projects'); // Sets the page to projects
         redirect('/helloworld/projects'); 
     }
+    React.useEffect(() => {
+        const page = localStorage.getItem('page');
+        if (page === 'projects') {
+            setPage('projects');
+        }
+    }, [setPage]);
+
+    const isproject = page === 'projects';
+
     return (
         <button id='projectsBtn'
-        class='navbarItem'
+        className={`navbarItem ${isproject ? 'underline-active' : ''}`}
         onClick={makeChange}>
             Projects
         </button>

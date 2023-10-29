@@ -3,15 +3,24 @@ import SharedContext from '../../util/context/shared';
 import {useNavigate} from 'react-router-dom';
 
 function AboutMeBtn() {
-    const {setPage} = React.useContext(SharedContext);
+    const {page, setPage} = React.useContext(SharedContext);
     const redirect = useNavigate();
     const makeChange = () => {
-        setPage('About Me');
+        localStorage.setItem('page', 'aboutme'); // Sets the page to home
         redirect('/helloworld/aboutme');
     }
+    React.useEffect(() => {
+        const page = localStorage.getItem('page');
+        if (page === 'aboutme') {
+            setPage('aboutme');
+        }
+    }, [setPage]);
+
+    const isAboutme = page === 'aboutme';
+
     return (
         <button id='aboutmeBtn'
-        class='navbarItem'
+        className={`navbarItem ${isAboutme ? 'underline-active' : ''}`}
         onClick={makeChange} 
         >
             About Me

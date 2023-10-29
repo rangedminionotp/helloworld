@@ -100,6 +100,11 @@ function Experience() {
                     </Popper> 
                     </Box>
             </div>
+            <div>
+                    <div class='aboutmeContent about' type='button' onClick={() => window.open('https://drive.google.com/file/d/1yAA8VJRlsmU3N5pe-0JN_9FYuZPmb62A/view?usp=sharing')}>
+                        Resume
+                    </div>
+            </div>
             </div >
         </div>
     );
